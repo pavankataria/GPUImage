@@ -13,6 +13,10 @@
 /** This enables the benchmarking mode, which logs out instantaneous and average frame times to the console
  */
 @property(readwrite, nonatomic) BOOL runBenchmark;
+@property(readwrite, nonatomic) BOOL hasSetTime;
+@property(readwrite, nonatomic) int currentFrame;
+@property(readwrite, nonatomic) CGFloat nominalFrameRate;
+@property(readwrite, nonatomic) CGFloat totalTime;
 
 @property(nonatomic, copy) void(^encodingProgressBlock)(float);
 
